@@ -1,10 +1,9 @@
 function sortByInsertion(array) {
-    let arrayLength = array.length      
-    let i, j             
+    let arrayLength = array.length            
     
     for (i = 1; i < arrayLength; i++) {
         const key = array[i]
-        j = i - 1     // when i = 1, j = 0
+        let j = i - 1     // when i = 1, j = 0
 
       while (j >= 0 && array[j] > key) {
             array[j + 1] = array[j]
