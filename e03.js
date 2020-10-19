@@ -2,7 +2,7 @@ function sortBySelection(array) {
     let arrayLength = array.length
     
     for (let i = 0; i < arrayLength; i++) {
-      let min = i 
+      let min = i // min = 0
 
       for (let j = i + 1; j < arrayLength; j++) {
 
@@ -12,7 +12,7 @@ function sortBySelection(array) {
       }
 
       let key = array[i]
-      
+
       array[i] = array[min]
       array[min] = key
 
