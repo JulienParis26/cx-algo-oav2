@@ -6,16 +6,18 @@ function sortBySelection(array) {
 
       for (let j = i + 1; j < arrayLength; j++) {
 
-        if(array[j] < array[min]){
+        if (array[j] < array[min]){
             min = j
         }
       }
 
       let key = array[i]
+      
       array[i] = array[min]
       array[min] = key
 
     }
+
     return array
   };
 
